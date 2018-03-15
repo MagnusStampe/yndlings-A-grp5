@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 337">
+  <title>ur</title>
+  <g id="urskive">
+    <g>
+      <circle cx="168.5" cy="168.5" r="153.5" fill="#fff"/>
+      <path d="M200.5,62a138.51,138.51,0,1,1-97.93,40.57A137.58,137.58,0,0,1,200.5,62m0-30A168.5,168.5,0,1,0,369,200.5,168.5,168.5,0,0,0,200.5,32Z" transform="translate(-32 -32)" fill="#052951"/>
+    </g>
+    <circle cx="168.5" cy="168.5" r="17.5" fill="#052951"/>
+    <g>
+      <circle cx="169" cy="49" r="7" fill="#fff"/>
+      <path d="M201,74a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z" transform="translate(-32 -32)" fill="#052951"/>
+    </g>
+    <g>
+      <circle cx="169" cy="288" r="7" fill="#fff"/>
+      <path d="M201,313a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z" transform="translate(-32 -32)" fill="#052951"/>
+    </g>
+    <g>
+      <circle cx="288" cy="168" r="7" fill="#fff"/>
+      <path d="M320,193a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z" transform="translate(-32 -32)" fill="#052951"/>
+    </g>
+    <g>
+      <circle cx="48" cy="168" r="7" fill="#fff"/>
+      <path d="M80,193a7,7,0,1,0,7,7,7,7,0,0,0-7-7Z" transform="translate(-32 -32)" fill="#052951"/>
+    </g>
+  </g>
+  <g id="minutviser">
+    <circle cx="168.5" cy="168.5" r="17.5" fill="#052951"/>
+    <circle cx="168.5" cy="48" r="9" fill="#052951"/>
+    <polygon points="151 168 159.5 48 177.5 48 186 168 151 168" fill="#052951"/>
+  </g>
+  <g id="timeviser">
+    <circle cx="168.5" cy="168.5" r="17.5" fill="#052951"/>
+    <circle cx="168.5" cy="102.36" r="9" fill="#052951"/>
+    <polygon points="151 168 159.5 102.05 177.5 102.05 186 168 151 168" fill="#052951"/>
+  </g>
+</svg>

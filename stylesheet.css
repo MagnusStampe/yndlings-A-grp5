@@ -1,0 +1,197 @@
+img {
+    width: 100%;
+}
+
+/* Navigation menu */
+
+nav {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.burger {
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    justify-self: end;
+    display: inherit;
+    float: left;
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+#nav_content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.6s;
+    width: 100%;
+    left: -100%;
+    text-align-last: left;
+}
+
+
+nav button {
+    display: grid;
+}
+
+
+#nav_content.show {
+    max-height: 500px;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Hvad dækkes */
+
+#hvad {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.revne {
+    grid-area: 1 / 2 / 5 / 3;
+    margin: auto;
+}
+
+/* Hvornår dækkes */
+
+#hvornar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#content {
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+/* Smileys */
+
+#smileys {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 0.5em;
+}
+
+.smiley {
+    width: 3em;
+    height: 3em;
+    transition: 1s;
+}
+
+.smiley svg {
+    width: 100%;
+    height: 100%;
+}
+
+#haha_container.smiley #mund {
+    animation-name: haha_kf;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+#love_container.smiley #v_hjerte,
+#love_container.smiley #h_hjerte {
+    animation-name: love_kf;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+#wow_container.smiley #v_bryn,
+#wow_container.smiley #h_bryn {
+    animation-name: wow_kf;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+#money_container.smiley #tunge {
+    animation-name: money_kf;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes haha_kf {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    10% {
+        transform: translate(-5%, -10%) scale(1.1);
+    }
+    20% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+
+@keyframes love_kf {
+    40% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(-10%, -10%) scale(1.2);
+    }
+    60% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes wow_kf {
+    0% {
+        transform: translate(-293%, -50%);
+    }
+    20% {
+        transform: translate(-293%, -50%);
+    }
+    30% {
+        transform: translate(-293%, -58%);
+    }
+    40% {
+        transform: translate(-293%, -50%);
+    }
+    100% {
+        transform: translate(-293%, -50%);
+    }
+}
+
+@keyframes money_kf {
+    60% {
+        transform: translate(0, 0) scale(1);
+    }
+    65% {
+        transform: translate(5%, 7%) scale(0.9);
+    }
+    80% {
+        transform: translate(-10%, -14%) scale(1.2);
+    }
+    90% {
+        transform: translate(0, 0) scale(1);
+    }
+}

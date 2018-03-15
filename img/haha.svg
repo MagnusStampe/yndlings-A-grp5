@@ -1,0 +1,11 @@
+<svg id="haha" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201 202">
+  <title>haha</title>
+  <ellipse cx="100.5" cy="101" rx="100.5" ry="101" fill="#fcd900"/>
+  <g id="mund">
+    <path d="M268,545H378s-11.93,40-55.66,42.87S268,545,268,545Z" transform="translate(-223 -425)" fill="#211c02"/>
+    <path d="M271.39,546l103.61.79s-2.82,10.72-5.73,12.45-92.43-.77-93.27,0S269.47,549.15,271.39,546Z" transform="translate(-223 -425)" fill="#f4f4f4"/>
+  </g>
+  <path d="M341,497.83s16.5-39.87,33,0c0,0-11-5.5-16.5-4.12Z" transform="translate(-223 -425)" fill="#211c02"/>
+  <path d="M275,495.83s16.5-39.87,33,0c0,0-11-5.5-16.5-4.12Z" transform="translate(-223 -425)" fill="#211c02"/>
+  <path d="M386,530" transform="translate(-223 -425)" fill="#f4f4f4"/>
+</svg>

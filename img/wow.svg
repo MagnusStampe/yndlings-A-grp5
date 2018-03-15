@@ -1,0 +1,11 @@
+<svg id="wow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201 202">
+  <title>wow</title>
+  <ellipse cx="100.5" cy="101" rx="100.5" ry="101" fill="#fcd900"/>
+  <circle cx="136.5" cy="70.5" r="14.5" fill="#211c02"/>
+  <circle cx="64" cy="72" r="13" fill="#211c02"/>
+  <path d="M647,245" transform="translate(-592 -102)" fill="none"/>
+  <ellipse cx="101" cy="148.5" rx="24" ry="21.5" fill="#211c02"/>
+  <path id="h_bryn" d="M720.5,144.85s21-5,32.85,12.09l-1.63,1.53s-15.76-12.19-30-11.05Z" transform="translate(-592 -102)" fill="#211c02"/>
+  <path id="v_bryn" d="M630.07,156.59s14.16-16.35,33.74-9.3l-.43,2.19s-19.91-.73-30.85,8.51Z" transform="translate(-592 -102)" fill="#211c02"/>
+  <path d="M760,194" transform="translate(-592 -102)" fill="#211c02"/>
+</svg>
