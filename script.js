@@ -20,6 +20,8 @@ async function getSmiley(emote) {
 function toggleMenu() {
     document.querySelector("#burger").classList.toggle("change");
     document.querySelector("#nav_content").classList.toggle("show");
+    document.querySelector("#close_burger").classList.toggle("show");
 }
 
 document.querySelector("#burger").addEventListener("click", toggleMenu);
+document.querySelector("#close_burger").addEventListener("click", toggleMenu);

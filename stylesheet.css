@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 img {
     width: 100%;
 }
@@ -8,7 +13,7 @@ nav {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgba(100, 100, 100, 0.5);
+    width: 100vw;
 }
 
 .burger {
@@ -18,6 +23,7 @@ nav {
     justify-self: end;
     display: inherit;
     float: left;
+    z-index: 110;
 }
 
 
@@ -31,24 +37,68 @@ nav {
     transition: 0.4s;
 }
 
+#box {
+    background-color: blue;
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    z-index: 90;
+}
+
+#nav_burger {
+    z-index: 100;
+    margin: 6px;
+}
 
 #nav_content {
-    max-height: 0px;
     overflow: hidden;
     transition: 0.6s;
-    width: 100%;
-    left: -100%;
-    text-align-last: left;
+
+    width: 350px;
+    height: 100vh;
+
+    top: 50px;
+    left: -350px;
+
+
+    position: absolute;
+
+    background-color: red;
+
+}
+
+#nav_content button {
+    margin: 30px auto;
+    padding: 10px;
+
+    font-size: 20px;
+
+    width: 150px;
+    height: 50px;
+
+    border-radius: 1000px;
+
+    text-align: center;
 }
 
 
 nav button {
     display: grid;
+    z-index: 100;
 }
 
+nav a {
+    z-index: 100;
+    margin: 0 auto;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+}
 
 #nav_content.show {
-    max-height: 500px;
+    left: 0px;
 }
 
 .change .bar1 {
@@ -61,6 +111,45 @@ nav button {
 
 .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#kob {
+    height: 40px;
+    width: 100px;
+
+    border-radius: 100px;
+
+    margin: 5px;
+
+    margin-left: auto;
+}
+
+#close_burger {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 80;
+    background-color: rgba(50, 50, 50, 0.5);
+    transition: 1s;
+}
+
+#close_burger.show {
+    display: block;
+    animation-name: fade_in_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_in_kf {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Hvad dækkes */
