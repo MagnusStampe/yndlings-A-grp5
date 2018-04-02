@@ -1,10 +1,42 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
 }
 
 img {
     width: 100%;
+}
+
+button {
+    border: none;
+    background-color: #E10E49;
+    border-radius: 1000px;
+    color: #ddd;
+}
+
+/*
+
+Color scheme:
+
+Light blue:
+
+*/
+
+/* Main grid */
+
+#main_grid {
+    display: grid;
+    margin: 5em 2em;
+    grid-row-gap: 3em;
+}
+
+#main_grid h2 {
+    margin: 0 0 1em 0;
 }
 
 /* Navigation menu */
@@ -14,6 +46,8 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
+    top: 0;
+    z-index: 100;
 }
 
 .burger {
@@ -38,7 +72,7 @@ nav {
 }
 
 #box {
-    background-color: blue;
+    background-color: #00B9EA;
     width: 100vw;
     height: 50px;
     position: absolute;
@@ -63,7 +97,7 @@ nav {
 
     position: absolute;
 
-    background-color: red;
+    background-color: #22DBFC;
 
 }
 
@@ -75,8 +109,6 @@ nav {
 
     width: 150px;
     height: 50px;
-
-    border-radius: 1000px;
 
     text-align: center;
 }
@@ -102,7 +134,7 @@ nav img {
 }
 
 .change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 7px);
 }
 
 .change .bar2 {
@@ -152,7 +184,20 @@ nav img {
     }
 }
 
+/* Explainer */
+
+#explainer_fill {
+    width: 100%;
+    height: 10em;
+    background-color: black;
+}
+
 /* Hvad dækkes */
+
+#hvad .revne {
+    transform: scale(1.05);
+    z-index: 0;
+}
 
 #hvad {
     display: grid;
@@ -173,8 +218,48 @@ nav img {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#content {
+#hvornar .content {
     grid-area: 1 / 1 / 6 / 2;
+}
+
+#hvornar .animate {
+    transform: scale(0.8);
+}
+
+#hvornar .animate #minutviser {
+    transform-origin: center;
+
+    animation-name: minut_kf;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+#hvornar .animate #timeviser {
+    transform-origin: center;
+
+    animation-name: time_kf;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes minut_kf {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+@keyframes time_kf {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
 }
 
 /* Smileys */
@@ -183,6 +268,10 @@ nav img {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 0.5em;
+}
+
+#smileys p {
+    margin: auto 1em;
 }
 
 .smiley {

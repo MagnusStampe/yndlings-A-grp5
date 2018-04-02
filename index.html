@@ -15,11 +15,14 @@
     <nav>
 
         <div id="nav_burger">
+            <!-- Burger ikonet -->
             <div id="burger" data-navBurger>
                 <div class="up bar1" data-line1></div>
                 <div class="up bar2" data-line2></div>
                 <div class="up bar3" data-line3></div>
             </div>
+
+            <!-- Indhold til navigationsmenuen-->
             <div id="nav_content" class="hide" data-navContent>
                 <button id="basis">YndlingsBasis</button>
                 <button id="ting">YndlingsTing</button>
@@ -41,64 +44,91 @@
         </a>
     </nav>
 
-    <!-- Explainer -->
+    <div id="main_grid">
 
-    <div id="explainer"></div>
+        <!-- Explainer -->
 
-    <h2>overskrift</h2>
-    <p>tekst</p>
+        <article id="explainer">
 
+            <div id="explainer"></div>
 
+            <h2>Sommer</h2>
+            <!-- Sort div indtil explainer indsættes -->
+            <div id="explainer_fill"></div>
+            <p>tekst</p>
 
-    <!-- hvad dækker -->
-
-    <h2>Hvad dækker YndlingsTing?</h2>
-
-    <div id="hvad">
-
-        <img src="/img/b%C3%A6rbar.svg" alt="Bærbar">
-        <img src="/img/cykel.svg" alt="Cykel">
-        <img src="/img/smartphone.svg" alt="Smartphone">
-        <img src="/img/tablet.svg" alt="Tablet">
-
-        <img class="revne" src="/img/revne.gif" alt="Revnet smartphone">
-
-    </div>
-
-    <h2>Overskrift</h2>
-    <p>Tekst</p>
-
-    <!-- hvornår dækker -->
-
-    <h2>Hvornår dækker YndlingsTing?</h2>
-
-    <div id="hvornar">
-
-        <div id="content"><img src="/img/ur.gif"></div>
-        <div>Hvis du mister den...</div>
-        <div>Hvis du taber den...</div>
-        <div>Hvis den ikke virker...</div>
-        <div>Hvis du spilder væske ud over den...</div>
-        <div>Med mindre</div>
-
-    </div>
+        </article>
 
 
-    <!-- Smileys -->
 
-    <div id="smileys">
+        <!-- hvad dækker -->
 
-        <div id="wow_container" class="smiley"></div>
-        <p>Ingen selvrisiko</p>
+        <article id="hvad_daekker">
 
-        <div id="love_container" class="smiley"></div>
-        <p>Ingen binding</p>
+            <h2>Hvad dækker YndlingsTing?</h2>
 
-        <div id="money_container" class="smiley"></div>
-        <p>Prisen falder</p>
+            <div id="hvad">
 
-        <div id="haha_container" class="smiley"></div>
-        <p>Overskueligt</p>
+                <!-- Ting man kan forsikre - Små ikoner -->
+                <img src="/img/b%C3%A6rbar.svg" alt="Bærbar">
+                <img src="/img/cykel.svg" alt="Cykel">
+                <img src="/img/smartphone.svg" alt="Smartphone">
+                <img src="/img/tablet.svg" alt="Tablet">
+
+                <!-- GIF af mobil som revner - Stort ikon -->
+                <img class="revne" src="/img/revne.gif" alt="Revnet smartphone">
+
+            </div>
+
+            <h2>Overskrift</h2>
+            <p>Tekst</p>
+
+        </article>
+
+        <!-- hvornår dækker -->
+
+        <article id="hvornar_daekkes">
+
+            <h2>Hvornår dækker YndlingsTing?</h2>
+
+            <div id="hvornar">
+
+                <!-- Ur -->
+                <div class="content animate"></div>
+
+                <!-- Punkter -->
+                <div class="mister">Hvis du mister den...</div>
+                <div class="taber">Hvis du taber den...</div>
+                <div class="virker_ikke">Hvis den ikke virker...</div>
+                <div class="spilder">Hvis du spilder væske ud over den...</div>
+                <div class="med_mindre">Med mindre</div>
+
+            </div>
+
+        </article>
+
+
+        <!-- Smileys -->
+
+        <article id="smileys">
+
+            <!-- WOW -->
+            <div id="wow_container" class="smiley"></div>
+            <p>Ingen selvrisiko</p>
+
+            <!-- LOVE -->
+            <div id="love_container" class="smiley"></div>
+            <p>Ingen binding</p>
+
+            <!-- MONEY -->
+            <div id="money_container" class="smiley"></div>
+            <p>Prisen falder</p>
+
+            <!-- HAHA -->
+            <div id="haha_container" class="smiley"></div>
+            <p>Overskueligt</p>
+
+        </article>
 
     </div>
 
