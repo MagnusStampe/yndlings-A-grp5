@@ -4,11 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yndlings - grp. 5</title>
+    <title>Yndlings - Grp. 5</title>
     <link rel="stylesheet" href="stylesheet.css">
+
+    <meta property="og:title" content="Sommeren er sjovere med en forsikring">
+    <meta property="og:description" content="Få forsikret din yndlingsting til et lavt månedligt beløb og gør sommeren bekymringsfri">
+    <meta property="og:image" content="img/ad_explainer_img.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
+
+    <div id="meta_tekst">
+        Er du forsikret til sommeren
+    </div>
 
     <!-- Header -->
 
@@ -24,16 +40,32 @@
 
             <!-- Indhold til navigationsmenuen-->
             <div id="nav_content" class="hide" data-navContent>
-                <button id="basis">YndlingsBasis</button>
-                <button id="ting">YndlingsTing</button>
+
+                <!-- Knapper der linker til andre sider og videoportfolie -->
+                <button id="basis"><img src="img/yndlings_basis_hvid.svg"></button>
+                <button id="ting"><img src="img/yndlings_ting_hvid.svg"></button>
                 <button id="support">Support</button>
                 <button id="log_ind">Log ind</button>
                 <button id="video_portfolio">Video portfolio</button>
+
+                <!-- Knapper til SoMe -->
+                <div id="SoMe">
+                    <a href="https://www.facebook.com/Yndlings.dk/">
+                        <div id="facebook" class="SoMe"></div>
+                    </a>
+                    <a href="https://www.instagram.com/yndlings.dk/">
+                        <div id="instagram" class="SoMe"></div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCBaID3SowOjYEhUC7fv6zZQ">
+                        <div id="youtube" class="SoMe"></div>
+                    </a>
+                </div>
+
             </div>
         </div>
 
         <a href="/index.html">
-               <img src="/img/y_logo.svg" alt="logo">
+               <img src="img/y_logo.svg" alt="logo">
         </a>
 
         <button id="kob">Køb</button>
@@ -65,23 +97,31 @@
 
         <article id="hvad_daekker">
 
-            <h2>Hvad dækker YndlingsTing?</h2>
+            <h2>Hvad dækker <br><img src="img/yndlings_ting.svg"></h2>
 
             <div id="hvad">
 
                 <!-- Ting man kan forsikre - Små ikoner -->
-                <img src="/img/b%C3%A6rbar.svg" alt="Bærbar">
-                <img src="/img/cykel.svg" alt="Cykel">
-                <img src="/img/smartphone.svg" alt="Smartphone">
-                <img src="/img/tablet.svg" alt="Tablet">
+                <img src="img/b%C3%A6rbar.svg" alt="Bærbar">
+                <img src="img/cykel.svg" alt="Cykel">
+                <img src="img/smartphone.svg" alt="Smartphone">
+                <img src="img/tablet.svg" alt="Tablet">
 
                 <!-- GIF af mobil som revner - Stort ikon -->
-                <img class="revne" src="/img/revne.gif" alt="Revnet smartphone">
+                <img class="revne" src="img/revne.gif" alt="Revnet smartphone">
 
             </div>
 
-            <h2>Overskrift</h2>
-            <p>Tekst</p>
+            <h2>Forsikre det du har kærest</h2>
+            <p>Med YndlingsTing kan du forsikre</p>
+            <ul>
+                <li>Bærbar</li>
+                <li>Cykel</li>
+                <li>Mobil</li>
+                <li>Tablet</li>
+            </ul>
+            <p>Prisen variere alt efter hvor dyr og hvor gammel din YndlingsTing er</p>
+            <button>Find pris!</button>
 
         </article>
 
@@ -89,7 +129,7 @@
 
         <article id="hvornar_daekkes">
 
-            <h2>Hvornår dækker YndlingsTing?</h2>
+            <h2>Hvornår dækker <br><img src="img/yndlings_ting.svg"></h2>
 
             <div id="hvornar">
 
@@ -97,11 +137,21 @@
                 <div class="content animate"></div>
 
                 <!-- Punkter -->
-                <div class="mister">Hvis du mister den...</div>
-                <div class="taber">Hvis du taber den...</div>
-                <div class="virker_ikke">Hvis den ikke virker...</div>
-                <div class="spilder">Hvis du spilder væske ud over den...</div>
-                <div class="med_mindre">Med mindre</div>
+                <div class="mister">
+                    <p>Hvis du mister den...</p>
+                </div>
+                <div class="taber">
+                    <p>Hvis du taber den...</p>
+                </div>
+                <div class="virker_ikke">
+                    <p>Hvis den ikke virker...</p>
+                </div>
+                <div class="spilder">
+                    <p>Hvis du spilder væske ud over den...</p>
+                </div>
+                <div class="med_mindre">
+                    <p>Med mindre</p>
+                </div>
 
             </div>
 
